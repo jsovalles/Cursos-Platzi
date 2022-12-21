@@ -1,0 +1,15 @@
+version: "3"
+services:
+    db:
+        image: mysql:8.0
+        restart: always
+        ports:
+            - 3307:3306
+        container_name: database
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_USER=user
+            - MYSQL_PASSWORD=user
+        volumes:
+            - ./mysql:/var/lib/mysql # persistent database data.
+            - ./db-scripts:/docker-entrypoint-initdb.d #scripts
