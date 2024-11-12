@@ -1,0 +1,21 @@
+.Icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.Icon-check {
+  color: #888;
+}
+
+.Icon-check--active {
+  color: #00bfa6;
+}
+
+.Icon-delete {
+  color: #f44336;
+}
+
+.Icon:hover {
+  transform: scale(1.2);
+}
