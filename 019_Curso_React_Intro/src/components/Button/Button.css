@@ -1,4 +1,4 @@
-button {
+.floating-button {
   background-color: #00bfa6;
   color: white;
   font-size: 24px;
@@ -12,9 +12,11 @@ button {
   position: fixed;
   bottom: 20px;
   right: 20px;
+
+  z-index: 1;
 }
 
-button:hover {
+.floating-button:hover {
   background-color: #00796b;
   transform: scale(1.1);
 }

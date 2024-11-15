@@ -1,4 +1,4 @@
-import "../styles/TodoIcon.css";
+import "./Icon.css";
 
 const iconTypes = {
   check: "check",
@@ -8,7 +8,6 @@ const iconTypes = {
 function TodoIcon({ type, onClick, typeColor }) {
   return (
     <span className={`Icon Icon-${type} ${typeColor}`} onClick={onClick}>
-      {console.log(iconTypes[type])}
       <i className={`fas fa-${iconTypes[type]}`}> </i>
     </span>
   );
